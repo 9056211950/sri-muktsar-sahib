@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        .menu-list ul{
+            list-style: none;
+            display: flex;
+            margin-right: 50px;
+
+        }
+        .menu-list ul li{
+            margin-left: 20px;
+            padding: 30px;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: aqua;
+            height: 100px;
+            list-style: none;
+            text-align: center;
+            top: 77px;
+            right: 25px;;
+        }
+        .dropdown li{
+            padding: 0px 50px !important;
+            margin-left: 0px !important;
+        }
+        .dropdown{
+            display: none;
+        }
+        .menu-list ul li:hover .dropdown{
+display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="elearning.png" alt="" width="50px"></div>
+        <div class="menu-list">
+            <ul>
+                <li>Home</li>
+                <li>About Us </li>
+                <li>services
+<ol class="dropdown">
+    <li>abc</li>
+    <li>abc</li>
+    <li>abc</li>
+    <li>abc</li>
+</ol>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

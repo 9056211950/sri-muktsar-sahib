@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: brown;
+      padding: 20px 0;
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      font-family: 'Trebuchet MS', sans-serif;
+      position: relative;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu div {
+      margin-left: 30px;
+      color: white;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .line {
+      background-color: black;
+      width: 30px;
+      height: 2px;
+      margin: 5px 0;
+    }
+
+    .mob-menu {
+      display: none;
+      flex-direction: column;
+      background-color: brown;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      right: 10px;
+      z-index: 999;
+    }
+
+    .mob-menu div {
+      color: white;
+      padding: 5px 0;
+    }
+
+   
+    #menu-toggle {
+      display: none;
+    }
+
+   
+    @media only screen and (max-width: 800px) {
+      .menu {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: flex;
+      }
+
+      #menu-toggle:checked ~ .mob-menu {
+        display: flex;
+      }
+    }
+    .services-menu{ display: none;
+      margin-left: 20px;
+      
+
+
+    } 
+    .services-menu-mob {
+  display: none;
+  flex-direction: column;
+  background-color: #a0522d;
+  padding-left: 10px;
+}
+
+#services-toggle:checked ~ .services-menu-mob {
+  display: flex;
+}
+.services {
+  position: relative;
+  display: inline-block;}
+
+    .services-no {
+
+      display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.services:hover .dropdown-content {
+  display: block;}
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <img src="https://img.freepik.com/free-vector/gradient-hyper-pink-ice-cream-illustration_52683-140811.jpg?size=626&ext=jpg" alt="logo" width="50px" />
+    </div>
+
+    <div class="menu">
+      <div>home</div>
+      <div>Blog</div>
+      <div>menu</div>
+      <div class="services"> <span> services</span>
+    
+        <div class="services-no">
+          <div>1</div>
+          <div> 2</div>
+          <div>3</div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+    <div class="menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+ </div>
+    <div class="mob-menu">
+      <div>home</div>
+      <div>Blog</div>
+      <div>menu</div>
+      <div> services </div>
+    </div>
+  </div>
+  <div>
+<p> 
+
+nv v dfkjv dfvnkjdfvndfkjvnkfvkjdf
+</p>
+
+
+
+  </div>
+</body>
+</html>
